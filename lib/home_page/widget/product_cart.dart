@@ -10,7 +10,7 @@ class ProductCartWidget extends StatelessWidget {
                   Row(
                     children: [
                       Container(
-                        width: MediaQuery.of(context).size.width / 2 - 10,
+                        width: MediaQuery.of(context).size.width / 2 - 21,
                         height: 310,
                         decoration: BoxDecoration(
                           image: DecorationImage(
@@ -21,7 +21,7 @@ class ProductCartWidget extends StatelessWidget {
                       ),
                       SizedBox(width: 5),
                       Container(
-                        width: MediaQuery.of(context).size.width / 2 - 10,
+                        width: MediaQuery.of(context).size.width / 2 - 21,
                         height: 220,
                         decoration: BoxDecoration(
                           image: DecorationImage(
