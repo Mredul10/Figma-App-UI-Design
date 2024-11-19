@@ -41,7 +41,8 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 8),
+              
+              const SizedBox(height: 10),
               const Text(
                 "By Mredul",
                 style: TextStyle(fontSize: 14, color: Colors.grey),

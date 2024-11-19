@@ -5,44 +5,93 @@ class ProductCartWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-                children: [
-                   Column(
+    var screenWidth = MediaQuery.of(context).size.width / 2 - 23;
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 30),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Container(
-                        width: MediaQuery.of(context).size.width / 2 - 21,
-                        height: 220,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage('assets/images/Rectangle 2.png'),
+                      Column(
+                        children: [
+                          Image.asset(
+                            'assets/images/Rectangle 2.png',
+                            height: 220,
+                            width: screenWidth,
                             fit: BoxFit.cover,
                           ),
-                        ),
-                      ),
+                          SizedBox(height: 10),
+                          Image.asset(
+                            'assets/images/Rectangle 2.1.png',
+                            height: 310,
+                           width: screenWidth,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(height: 10),
+                          Image.asset(
+                            'assets/images/Rectangle 2.2.png',
+                            height: 220,
+                            width: screenWidth,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(height: 10),
+                          Image.asset(
+                            'assets/images/Rectangle 2.3.png',
+                            height: 310,
+                            width: screenWidth,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(height: 10),
+                          Image.asset(
+                            'assets/images/Rectangle 2.4.png',
+                            height: 310,
+                            width: screenWidth,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(height: 10),
                         ],
-                  ),
-                  SizedBox(width: 5),
-                  Column(
-                    children: [
-                      Container(
-                        width: MediaQuery.of(context).size.width / 2 - 21,
-                        height: 310,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage('assets/images/Rectangle 2.1.png'),
+                      ),
+                      SizedBox(width: 10),
+                      Column(
+                        children: [
+                          Image.asset(
+                            'assets/images/Rectangle 2.5.png',
+                            height: 310,
+                           width: screenWidth,
                             fit: BoxFit.cover,
                           ),
-                        ),
+                          SizedBox(height: 10),
+                          Image.asset(
+                            'assets/images/Rectangle 2.6.png',
+                            height: 310,
+                          width: screenWidth,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(height: 10),
+                          Image.asset(
+                            'assets/images/Rectangle 2.7.png',
+                            height: 220,
+                           width: screenWidth,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(height: 10),
+                          Image.asset(
+                            'assets/images/Rectangle 2.9.png',
+                            height: 310,
+                           width: screenWidth,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(height: 10),
+                          Image.asset(
+                            'assets/images/Rectangle 2.10.png',
+                            height: 220,
+                           width: screenWidth,
+                            fit: BoxFit.cover,
+                          ),
+                        ],
                       ),
-                      
-                     
                     ],
-                  )
-                  
-                  
-                
-                ],
-              );
-              
+                  ),
+
+    );
   }
 }
