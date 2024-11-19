@@ -5,13 +5,13 @@ class ProductCartWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Row(
                 children: [
-                  Row(
+                   Column(
                     children: [
                       Container(
                         width: MediaQuery.of(context).size.width / 2 - 21,
-                        height: 310,
+                        height: 220,
                         decoration: BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage('assets/images/Rectangle 2.png'),
@@ -19,10 +19,14 @@ class ProductCartWidget extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(width: 5),
+                        ],
+                  ),
+                  SizedBox(width: 5),
+                  Column(
+                    children: [
                       Container(
                         width: MediaQuery.of(context).size.width / 2 - 21,
-                        height: 220,
+                        height: 310,
                         decoration: BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage('assets/images/Rectangle 2.1.png'),
@@ -30,10 +34,15 @@ class ProductCartWidget extends StatelessWidget {
                           ),
                         ),
                       ),
+                      
+                     
                     ],
-                  ),
-                SizedBox(height: 5),
+                  )
+                  
+                  
+                
                 ],
               );
+              
   }
 }
