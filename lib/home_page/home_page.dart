@@ -43,10 +43,41 @@ class HomePage extends StatelessWidget {
               ),
               
               const SizedBox(height: 10),
-              const Text(
-                "By Mredul",
-                style: TextStyle(fontSize: 14, color: Colors.grey),
+              const Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  //Profile Picture
+                  CircleAvatar(
+                    radius: 20,
+                    backgroundImage: AssetImage('assets/images/mredul.jpg'),
+                  ),
+                  //Name and User name
+                  Padding(
+                    padding: EdgeInsets.all(10.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Mredul Halder',
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          '@mredul10',
+                          style: TextStyle(
+                            fontSize: 13,
+                            color: Colors.grey,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
+             
         
               const SizedBox(height: 32),
         
@@ -64,7 +95,7 @@ class HomePage extends StatelessWidget {
              
               ProductCartWidget(),
         
-              const SizedBox(height: 32),
+              const SizedBox(height: 10),
         
               // See More Button
               Center(
